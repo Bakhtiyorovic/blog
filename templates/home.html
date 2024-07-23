@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Main Page{% endblock title %}
+
+{% block content %}
+    <br/>
+    <div class="jumbotron">
+        <h1 class="display-4">Greetings, everyone!</h1>
+        <p class="lead">Welcome to my personal blogs.</p>
+        <hr class="my-4">
+        <p>Here you can see my personal biography and some stories and others.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">See the Posts</a>
+        </p>
+    </div>
+{% endblock content %}
